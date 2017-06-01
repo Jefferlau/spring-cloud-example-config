@@ -13,12 +13,4 @@ ribbon:
   eureka:
     enabled: true
 
-spring:
-  data:
-    neo4j:
-      uri: http://101.200.44.240:7474
-      username: test
-      password: test
-      session:
-        scope: session
 
