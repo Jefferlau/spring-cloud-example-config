@@ -1,0 +1,24 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+ribbon:
+  eureka:
+    enabled: true
+
+spring:
+  data:
+    neo4j:
+      uri: http://101.200.44.240:7474
+      username: test
+      password: test
+      session:
+        scope: session
+
