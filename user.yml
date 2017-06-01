@@ -1,16 +1,32 @@
+ribbon:
+  eureka:
+    enabled: true
+
+---
+spring:
+  profiles: development
+
 server:
   port: 9000
 
 eureka:
   client:
     serviceUrl:
-#      defaultZone: http://discovery:8761/eureka/
       defaultZone: http://localhost:8761/eureka/
   instance:
     preferIpAddress: true
 
-ribbon:
-  eureka:
-    enabled: true
+---
+spring:
+  profiles: production
 
+server:
+  port: 9001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
 
