@@ -7,10 +7,11 @@ spring:
   profiles: development
 
 server:
-  port: 9000
+  port: 9001
 
 logging:
-  level: debug
+  level:
+    ROOT: debug
 
 ---
 spring:
