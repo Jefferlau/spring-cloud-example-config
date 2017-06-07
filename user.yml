@@ -11,7 +11,8 @@ server:
 
 logging:
   level:
-    ROOT: debug
+    ROOT: info
+    me.jefferlau: debug
 
 ---
 spring:
