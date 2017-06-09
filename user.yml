@@ -22,7 +22,8 @@ server:
   port: 9000
 
 logging:
-  level: warn
+  level:
+    ROOT: warn
 
 ---
 spring:
@@ -32,4 +33,5 @@ server:
   port: 9000
 
 logging:
-  level: info
+  level:
+    ROOT: debug
